@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="titulo">Nutrição Aparecida</h1>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Meus pacientes</h2>
+            <label for="filtrar-tabela">Filtrar:</label>
+            <input type="text" name="filtro" id="filtrar-tabela" class="campo" placeholder="Digite o nome do paciente">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peso(kg)</th>
+                        <th>Altura(m)</th>
+                        <th>%Gordura</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-pacientes">
+                    <tr class="paciente" id="1">
+                        <td class="info-nome">Luis</th>
+                        <td class="info-peso">100</th>
+                        <td class="info-altura">2.00</th>
+                        <td class="info-gordura">10</th>
+                        <td class="info-imc"></th> 
+                    </tr>
+                    <tr class="paciente" id="2">
+                        <td class="info-nome">Carlos</th>
+                        <td class="info-peso">100</th>
+                        <td class="info-altura">2</th>
+                        <td class="info-gordura">12</th>
+                        <td class="info-imc">0</th> 
+                    </tr>
+                    <tr class="paciente" id="3">
+                        <td class="info-nome">Nome</th>
+                        <td class="info-peso">Peso(kg)</th>
+                        <td class="info-altura">Altura(m)</th>
+                        <td class="info-gordura">%Gordura</th>
+                        <td class="info-imc">IMC</th> 
+                    </tr>
+                    <tr class="paciente" id="4">
+                        <td class="info-nome">Nome</th>
+                        <td class="info-peso">Peso(kg)</th>
+                        <td class="info-altura">Altura(m)</th>
+                        <td class="info-gordura">%Gordura</th>
+                        <td class="info-imc">IMC</th> 
+                    </tr>
+                    <tr class="paciente" id="5">
+                        <td class="info-nome">Nome</th>
+                        <td class="info-peso">Peso(kg)</th>
+                        <td class="info-altura">Altura(m)</th>
+                        <td class="info-gordura">%Gordura</th>
+                        <td class="info-imc">IMC</th> 
+                    </tr>
+                    <tr class="paciente" id="6">
+                        <td class="info-nome">Nome</th>
+                        <td class="info-peso">Peso(kg)</th>
+                        <td class="info-altura">Altura(m)</th>
+                        <td class="info-gordura">%Gordura</th>
+                        <td class="info-imc">IMC</th> 
+                    </tr>
+                </tbody>
+            </table>
+            <span id="erro-busca" class="invisivel">Erro ao buscar pacientes</span>
+            <button id="buscar-pacientes" class="botao-principal">Buscar pacientes</button>
+        </section>
+    </main>
+    <section class="container">
+        <h2 id="titulo-form">Adicionar novo paciente</h2>
+        <form id="novo-paciente">
+            <ul class="mensagem-erro"></ul>
+            <div class="">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="digite o nome do paciente" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="peso">Peso(kg):</label>
+                <input type="text" name="peso" id="peso" placeholder="digite o peso do paciente" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura(m):</label>
+                <input type="text" name="altura" id="altura" placeholder="digite a altura do paciente" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="gordura">Gordura(%):</label>
+                <input type="text" name="gordura" id="gordura" placeholder="digite o % gordura do paciente" class="campo">
+            </div>
+            <button id="adicionar-paciente" class="botao-principal">Adicionar</button>
+        </form>
+    </section>
+    <script src="Js/calcula-imc.js"></script>
+    <script src="Js/funcoes.js"></script>
+    <script src="Js/form.js"></script>
+    <script src="Js/remove-paciente.js"></script>
+    <script src="Js/filtrar-tabela.js"></script>
+    <script src="Js/busca-pacientes.js"></script>
+
+</body>
+</html>
